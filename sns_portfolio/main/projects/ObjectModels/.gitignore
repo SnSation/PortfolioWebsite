@@ -1,9 +1,9 @@
 # Start SnSation .gitignore
-PortfolioWebsite_env
+ObjectModel_env
 
 # End SnSation .gitignore
 
-# Start GitHub Python .gitignore Template
+# Start GitHub Python Template
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -135,4 +135,4 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# End GitHub Python .gitignore Template
+# End GitHub Python Template

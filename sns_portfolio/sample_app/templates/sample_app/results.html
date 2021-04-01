@@ -1,0 +1,25 @@
+<!-- Use ../base.html as a template -->
+{% extends 'base.html' %}
+
+<!-- Page Title -->
+{% block title %}
+    Results
+{% endblock %}
+
+<!-- Page Content -->
+{% block content %}
+    <h1>{{ question.question_text }}</h1>
+
+    <ul>
+        {% for choice in question.choice_set.all %}
+            <li>{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="{% url 'sample_app:detail' question.id %}">Vote Again</a>
+{% endblock %}
+
+<!-- Page Scripts -->
+{% block scripts %}
+
+{% endblock %}

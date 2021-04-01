@@ -19,6 +19,7 @@ from django.urls import path, include
 urlpatterns = [
     # path(route='url_path', view=view_function, kwargs={}, name='route_name', Pattern=None)
     # sample path = path('profile/<int:profile_id>/summary/', views.profile.summary, {}, 'profile_summary', None)
-    path('admin/', admin.site.urls),
-    path('sample_app/', include('sample_app.urls')),
+    path(route='admin/', view=admin.site.urls),
+    path(route='', view=include('main.urls')),
+    path(route='sample_app/', view=include('sample_app.urls')),
 ]
